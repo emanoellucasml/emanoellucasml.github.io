@@ -10,6 +10,10 @@ body {
   color: #868e96;
 }
 
+#foto-perfil{
+  border-radius: 10px !important;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
