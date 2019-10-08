@@ -1,0 +1,15 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.conteudo{
+	font-size: 20px;
+	text-indent: 70px;
+	padding-left: 20px;
+}
+
+.btn_imprime{
+	margin-left: 70px:;
+	display: block;
+}

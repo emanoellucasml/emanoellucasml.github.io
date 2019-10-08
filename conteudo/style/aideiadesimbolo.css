@@ -1,0 +1,28 @@
+body{
+	
+}
+
+.conteudo{
+	font-size: 20px;
+	text-indent: 70px;
+}
+
+.conteudo span{
+	text-align: center;
+	padding-left: 10px;
+}
+
+h1{
+	font-size: 25px;
+}
+
+#txt1{
+	color: black;
+	background-color: yellow;
+}
+
+
+.conteudo{
+	box-shadow: 0px 0px 10px #69a6b5;
+	padding: 15px;
+}
