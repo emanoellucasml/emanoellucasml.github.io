@@ -15,10 +15,12 @@ body{
 
 
 .barrasuperiorinterna{
-	float: right;
+	/*float: right;
 	height: 40px;
 	width: 210px;
-	line-height: 30px;
+	line-height: 30px;*/
+	display: flex;
+	justify-content: flex-end;
 }
 
 .barrasuperiorinterna .campo_pesquisa{
