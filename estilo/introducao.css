@@ -88,6 +88,9 @@ body{
 	line-height: 50px;
 }
 
+.menu ul a:hover{
+	text-decoration: none;
+}
 
 
 .ladodireito{
