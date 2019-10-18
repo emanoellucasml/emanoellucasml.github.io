@@ -1,7 +1,30 @@
 body{
-    background-color:  #131f1f !important
+    background-color:  #131f1f !important;
+    padding: 0px;
+    
 }
 
 .item{
     background-color: rgba(245, 163, 163, 0.541);
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: #444440;
+    color: white;
+    font-family: arial;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+.row p{
+    color: white;
+    font-weight: bold;
+}
+
+.item:hover{
+    cursor: pointer;
 }
