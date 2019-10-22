@@ -22,11 +22,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/630b2b9484.js"></script>
     <script>
-        setInterval(oculta, 3000);
+        setInterval(oculta, 500);
         function oculta()
         {
             var preloader = document.querySelector('body #preloader');
-            preloader.innerHTML = '';   
+            preloader.style.display = 'none';
         }
     </script>
 </head>
@@ -41,7 +41,22 @@
             </div>
         </div>
     </div>
-    <div class="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2 col-xs-1 col-md-2 col-lg-2" style="background-color: orange;">
+                ok
+            </div>
+            <div class="col-sm-10 col-xs-11 col-md-10 col-lg-10" style="background-color: blue;">
+                na
+            </div>
+        </div>
     </div>
 </body>
 </html>

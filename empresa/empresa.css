@@ -1,5 +1,6 @@
 body {
-    background-color: #131f1f !important;
+    /*background-color: #131f1f !important;*/
+    background-color: white !important;
     overflow: hidden; 
   }
    
@@ -64,3 +65,10 @@ body {
       opacity: 1; 
     } 
   }
+
+
+
+
+#linhaNomeEmpresa{
+    font-size: 18px;
+}
