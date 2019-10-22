@@ -8,6 +8,10 @@ body{
     cursor: pointer;
 }
 
+.item a i{
+    color: white;
+}
+
 .rodape {
     background-color: #444440;
     color: white;
