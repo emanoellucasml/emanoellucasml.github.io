@@ -73,4 +73,10 @@ body {
     font-size: 18px;
 }
 
+#l12{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 
