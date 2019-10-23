@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/630b2b9484.js"></script>
     <script>
-        setInterval(oculta, 1800);
+        setInterval(oculta, 300);
         function oculta()
         {
             var preloader = document.querySelector('body #preloader');
@@ -33,7 +33,7 @@
 <body>
     <div id="preloader">
         <div class="inner">
-            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <!-- HTML DA ANIMAÇÃO PRELOADER! -->
             <div class="bolas">
                 <div></div>
                 <div></div>
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="display: none;">
         <div class="row ldz" style="background: #6c757d;">
             <div class="btn-group" role="group" aria-label="Basic example">
                 <div class="btn btn-secondary">
@@ -53,10 +53,10 @@
             </div>
         </div>
         <div class="row mb-3 ldz" style="background-color: white">
-            <div class="col-sm-12 col-lg-12 col-xs-12 col-md-12 text-center mt-5 mb-5">
+            <div class="col-sm-12 col-lg-12 col-xs-12 col-md-12 text-center mt-5 mb-5 p-4">
                 <img src="logo1.png" width="190px" height="190px" style="border-radius: 120px">
             </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12 flex mb-2 mt-4" id="l12">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12 flex mb-4 mt-4" id="l12">
                 <div style="float: left; margin-right: 1%;">
                     <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
                 </div>
@@ -76,21 +76,53 @@
             </div>
         </div>       
 
-        <div class="row mb-3 ldz" style="background-color: white">
-                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12 text-center p-3">
-                    <i class="fa fa-phone fa-2x" aria-hidden="true" style="float: left;"></i>
-                    Telefone
+         
+
+       
+    </div>
+
+    <div class="container" style="padding: 0;">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12" style="padding-right: 0px;  background-color: blue;">
+                <div style="width: 100%; float: left; line-height: 35px;">
+                    &nbsp;&nbsp;<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Empresa - Distribuidora - 20 anos de tradição
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-xs-12 col-md-12 text-center p-5" style="background-color: white;">
+                <img src="logo1.png" width="190px" height="190px" style="border-radius: 120px">
+            </div>
+        </div>
+        <div class="row pb-3 pl-2" style="background-color: white;">
+            <div class="col-sm-12 col-lg-12 col-xs-12 col-md-12">
+                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                Rua H-20, 10 B - Parque Shalon, São Luís - MA, CEP: 65485-000
+            </div>
+        </div>
+       
+        <div class="row pb-4 pl-2" style="background-color: white;">
+            <div class="col-sm-12 col-lg-12 col-xs-12 col-md-12">
+                <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+                Frigorífico
+            </div>
+        </div>
+
+        <div class="row mb-3 mt-4 ldz pl-2" style="background-color: white">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12 text-center p-3">
+                <i class="fa fa-phone fa-2x" aria-hidden="true" style="float: left;"></i>
+                Telefone
+            </div>
         </div> 
 
-        <div class="row ldz" style="background-color: white; padding: 1rem;">
+        <div class="row ldz pl-2" style="background-color: white; padding: 0.1rem;">
                 <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12 text-center p-3">
                     <i class="fa fa-globe fa-2x" aria-hidden="true" style="float: left;"></i>
                     Site
                 </div>
-        </div> 
+        </div>
 
-       
     </div>
 </body>
 </html>
