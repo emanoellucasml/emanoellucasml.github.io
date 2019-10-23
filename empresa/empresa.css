@@ -4,20 +4,19 @@ body {
     /*overflow: hidden; */
   }
    
-  /* ini: Preloader */
-   
+  /* 
   #preloader {
       position:fixed;
       top:0;
       left:0;
       right:0;
       bottom:0;
-      background-color:#131f1f; /* cor do background que vai ocupar o body */
-      z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+      background-color:#131f1f; /* cor do background que vai ocupar o body 
+      z-index:999; /* z-index para jogar para frente e sobrepor tudo 
   }
   #preloader .inner {
       position: absolute;
-      top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+      top: 50%; /* centralizar a parte interna do preload (onde fica a animação)
       left: 50%;
       transform: translate(-50%, -50%);  
   }
@@ -66,7 +65,7 @@ body {
     } 
   }
 
-
+*/
 
 
 #linhaNomeEmpresa{
