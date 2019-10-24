@@ -1,6 +1,7 @@
 body{
     /*background-color: #131f1f !important;*/
-    background-color: rgb(237, 237, 237) !important;
+    background-color: #ededed !important;
+    color: white;
 }
     
 #linhaNomeEmpresa{
@@ -9,4 +10,5 @@ body{
 
 .ldz{
     box-shadow: 0px 0px 1px black;
+    background-color: white !important;
 }
