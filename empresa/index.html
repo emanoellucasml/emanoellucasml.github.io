@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,41 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script>
+        setInterval(oculta, 3000);
+        function oculta() {
+            var preloader = document.querySelector('body #preloader');
+            preloader.style.display = 'none';
+        }
+    </script>
+    <style>
+        .load {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container-fluid">
+
+        <div id="preloader">
+            <div class="inner">
+                <!-- HTML DA ANIMAÇÃO PRELOADER! -->
+                <div class="bolas">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
         <div class="row flex justify-content-center align-items-center mb-4 mt-3">
             <div class="col-sm-6 col-md-6 col-lg-6 flex" style="text-align: center;">
                 <img src="logo1.png" width="190px" height="190px" style="border-radius: 120px">
@@ -61,12 +93,13 @@
             </div>
         </div>
         <div class="row rodape">
-           <footer>
+            <footer>
                 <div class="col-sm-12 col-lg-12 col-md-12" id="teste">
                     Empresa &copy | 2019
                 </div>
-           </footer>
+            </footer>
         </div>
     </div>
 </body>
+
 </html>
