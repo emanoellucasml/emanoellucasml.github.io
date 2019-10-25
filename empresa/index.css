@@ -12,6 +12,10 @@ body{
     color: white;
 }
 
+.item a:hover{
+    text-decoration: none;
+}
+
 .rodape {
     background-color: #444440;
     color: white;

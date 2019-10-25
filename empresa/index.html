@@ -20,6 +20,9 @@
             var preloader = document.querySelector('body #preloader');
             preloader.style.display = 'none';
         }
+        var linkItem = window.document.querySelectorAll('.item a');
+        for(var i = 0; i < linkItem.length; i++)
+            linkItem[i].style.textDecoration = 'none';
     </script>
     <style>
         .load {
