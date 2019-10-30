@@ -1,5 +1,5 @@
 * {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: quicksandbold;
 }
 
 a {
@@ -58,10 +58,20 @@ footer {
 }
 
 @font-face {
-    font-family: grand;
-    src: url(../fonts/grand.otf);
+    font-family: quicksandregular;
+    src: url(../fonts/quicksandregular.otf);
+}
+
+@font-face{
+    font-family: quicksandbold;
+    src: url(../fonts/quicksandbold.otf)
+}
+
+.quicksandbold{
+    font-family: quicksandbold;
 }
 
 .textoPrato{
-    font-family: grand;
+    font-family: quicksandregular;
+    font-weight: 700;
 }
