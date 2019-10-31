@@ -118,7 +118,12 @@ footer ul li{
 
 @font-face{
     font-family: quicksandbold;
-    src: url(../fonts/quicksandbold.otf)
+    src: url(../fonts/quicksandbold.otf);
+}
+
+@font-face{
+    font-family: sofiapro;
+    src: url(../fonts/sofiapro.ttf);
 }
 
 .quicksandbold{
