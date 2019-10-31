@@ -39,7 +39,17 @@ a:hover {
 }
 
 footer {
-    background-color: #fff9af;
+    background-color: #131a3e;
+}
+
+footer ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+}
+
+footer ul li{
+    border-bottom: 1px solid white;;
 }
 
 .card {
@@ -77,3 +87,22 @@ footer {
 }
 
 
+.widget_receita{
+    display: flex;
+    border: 1px solid #e8e8e8;
+    border-radius: 0.3rem;
+}
+
+.img_rec{
+    flex: 1;
+}
+
+.text_rec{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+    text-align: justify;
+    padding-left: 0.5rem;
+}
