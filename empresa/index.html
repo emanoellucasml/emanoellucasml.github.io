@@ -43,11 +43,44 @@
     <link rel="stylesheet" href="assets/css/animacao.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" />
     <script>
-            setInterval(oculta, 500);
-            function oculta()
-            {
-                $('#preloader').fadeOut(1000);
-            }
+        setInterval(oculta, 500);
+        function oculta() {
+            $('#preloader').fadeOut(1000);
+        }
+
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 60) {
+                    $('#navbar').addClass('navbar-fixed-top', 500);
+
+                } else {
+                    $('#navbar').removeClass('navbar-fixed-top', 500);
+
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+
+            jQuery("#subirTopo").hide();
+
+            jQuery('a#subirTopo').click(function () {
+                jQuery('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+        });
     </script>
 </head>
 
@@ -64,6 +97,10 @@
                 </div>
             </div>
         </div>
+
+        <a id="subirTopo">
+            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+        </a>
 
         <div class="row redeSocial">
             <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding: 0;">
@@ -82,7 +119,7 @@
         </div>
         <header class="row">
             <div class="cols-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding: 0px;">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
                     <a class="navbar-brand" href="#">
                         <img src="assets/img/logo.png" alt="" width="150px">
                     </a>
@@ -228,11 +265,10 @@
             <div class="col-sm-5 col-xs-5 col-lg-5 col-md-5 cartaoReceita mb-3" style="">
                 <div class="widget_receita">
                     <div class="img_rec">
-                        <img src="assets/img/rec1.jpeg"
-                        class="" alt="..." width="100%">
+                        <img src="assets/img/rec1.jpeg" class="" alt="..." width="100%">
                     </div>
                     <div class="text_rec">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </div>
                 </div>
                 <div class="btn btn-warning w-100">
@@ -243,10 +279,10 @@
                 <div class="widget_receita">
                     <div class="img_rec">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9UTf9v_pSREySddIxG9tdTE8AE_yylVsR-lhf8vVCLgr3Be-y"
-                        class="" alt="..." width="100%">
+                            class="" alt="..." width="100%">
                     </div>
                     <div class="text_rec">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </div>
                 </div>
                 <div class="btn btn-warning w-100">
@@ -256,8 +292,9 @@
         </div>
 
         <footer class="row pt-3">
-            <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5 pl-2" style="max-height: 140px; padding: 0px; color: white;;">
-                <img src="assets/img/capire.png"" width="180px" alt=""></br>
+            <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5 pl-2"
+                style="max-height: 140px; padding: 0px; color: white;;">
+                <img src="assets/img/capire.png"" width=" 180px" alt=""></br>
                 <span><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;ovolar@hotmail.com</span></br>
                 <span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(98)981969799</span></br>
                 <span><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;@ovolar_</span></br>

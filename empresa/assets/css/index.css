@@ -2,6 +2,50 @@
     font-family: quicksandbold;
 }
 
+.navbar-fixed-top {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+
+
+  #subirTopo {
+    text-decoration: none;
+    background: #fbcc3b;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 15px;;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    border: 0;
+    font-family: sans-serif;
+    opacity: 1;
+    z-index: 998;
+    }
+    
+    #subirTopo:hover {
+    opacity:1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 a {
     color: black;
     font-size: 18px;
