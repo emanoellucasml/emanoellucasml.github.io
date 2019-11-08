@@ -3,7 +3,7 @@
 }
 
 .p1 {
-    background-image: url('assets/img/up_f.png');
+    background-image: url('../img/up_f.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-origin: content-box;
@@ -64,7 +64,7 @@
 }
 
 #m-f {
-    background-image: url('assets/img/m_f.png');
+    background-image: url('../img/m_f.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-origin: content-box;
