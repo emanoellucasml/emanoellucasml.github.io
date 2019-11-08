@@ -1,0 +1,82 @@
+* {
+    font-size: 102%;
+}
+
+.p1 {
+    background-image: url('assets/img/up_f.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-origin: content-box;
+}
+
+.bg-light {
+    background-color: unset !important;
+}
+
+.font-branca {
+    color: white !important;
+}
+
+.texto-fidelidade {
+    color: #114c86;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#texto-linha-de-produtos {
+    color: #114c86;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.btn-cadastre {
+    display: flex;
+}
+
+.btn-cadastre-texto {
+    display: flex;
+    flex: 5;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    color: #aaabaf;
+}
+
+.btn-cadastre-seta {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #64bb50;
+    border-radius: 0.8rem;
+    color: white;
+}
+
+.owl-carousel .item img {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+#m-f {
+    background-image: url('assets/img/m_f.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-origin: content-box;
+}
+
+.lista-lojas li {
+    float: left;
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+.lista-lojas{
+    font-weight: bold;
+    color: #858688;
+}
