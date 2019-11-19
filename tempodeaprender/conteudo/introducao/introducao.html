@@ -7,13 +7,13 @@
 	<link rel="stylesheet" href="style/introducao.css" type="text/css">
 	<link rel="stylesheet" href="../estilo/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
-	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../../assets/js/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" href="../../assets/fontawesome/css/font-awesome.css">
 	<script>
-		/*setInterval(oculta, 500);
+		setInterval(oculta, 500);
 		function oculta() {
 			$('#preloader').fadeOut(1000);
-		}*/
+		}
 	</script>
 	<style>
 		* {
@@ -32,7 +32,7 @@
 			border-radius: 1rem;
 			color: white;
 			z-index: 999;
-			
+
 		}
 
 		#botao-direito {
@@ -50,8 +50,79 @@
 		#botao-direito:hover {
 			cursor: pointer;
 		}
-		#botao-esquerdo:hover{
+
+		#botao-esquerdo:hover {
 			cursor: pointer;
+		}
+
+		#preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #131f1f;
+			/*  cor do background que vai ocupar o body  */
+			z-index: 999;
+			/* z-index para jogar para frente e sobrepor tudo  */
+		}
+
+		#preloader .inner {
+			position: absolute;
+			top: 50%;
+			/* centralizar a parte interna do preload (onde fica a animação) */
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.bolas>div {
+			display: inline-block;
+			background-color: #f98b5f;
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+			margin: 3px;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			animation-name: animarBola;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+
+		}
+
+		.bolas>div:nth-child(1) {
+			animation-duration: 0.99s;
+			animation-delay: 0.2;
+		}
+
+		.bolas>div:nth-child(2) {
+			animation-duration: 0.99s;
+			animation-delay: 0.5s;
+		}
+
+		.bolas>div:nth-child(3) {
+			animation-duration: 0.99s;
+			animation-delay: 0.7s;
+		}
+
+		@keyframes animarBola {
+			0% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
+			}
+
+			16% {
+				-webkit-transform: scale(0.1);
+				transform: scale(0.1);
+				opacity: 0.7;
+			}
+
+			33% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
+			}
 		}
 	</style>
 	<script>
@@ -63,12 +134,12 @@
 				audio.addEventListener('canplaythrough', function () {
 					audio.play();
 				});
-			}else{
+			} else {
 				window.alert("Você chegou ao fim do documento!");
 			}
 		}
 
-		function anterior(){
+		function anterior() {
 			if (parteAtual() > partes[0]) {
 				var anterior = (parteAtual() - 1).toString().concat(".html");
 				document.querySelector('#iframe').src = anterior;
@@ -80,7 +151,7 @@
 		}
 
 		var partes = [
-			'0', '1', '2', '3', '4', '5'
+			'0', '1', '2'
 		]
 
 		function parteAtual() {
