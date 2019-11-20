@@ -10,12 +10,39 @@
     <script src="../../assets/js/jquery-3.4.1.min.js"></script>
     <script>
         window.onload = function () {
-            $('body').show(200)
+            $('body').show(500)
         };
+
+        function recarrega() {
+            alert('👌');
+        }
+
+
+        function ApareceTexto() {
+            document.querySelector('h2').style.display = 'block';
+            //$('h1').fadeIn(300);
+            document.querySelector('.atividade').style.boxShadow = '0px 0px 10px black';
+        }
+
+        function DesapareceTexto() {
+            document.querySelector('h2').style.display = 'none';
+            //$('h1').fadeOut(100);
+            document.querySelector('.atividade').style.boxShadow = 'none';
+        }
     </script>
     <style>
-        body {
+        body{
             display: none;
+        }
+        .atividade {
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        .atividade:hover {
+            -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+
         }
 
         p {
@@ -24,16 +51,40 @@
             text-indent: 5%;
         }
 
-        h1 {
+        h2 {
             text-transform: uppercase;
             font-family: 'PT Sans', sans-serif;
+            display: none;
+
+        }
+
+        .atividade {
+            height: 220px;
+            width: 220px;
+            background-color: green;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -50px;
+            border-radius: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 50%;
+            color: white;
+        }
+
+        .atividade:hover {
+            cursor: pointer;
+            opacity: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-      link para atividades
+    <div class="atividade" onmouseover="ApareceTexto()" onmouseout="DesapareceTexto()" onclick="recarrega()">
+        <h2>Atividades</h2>
     </div>
 </body>
 
