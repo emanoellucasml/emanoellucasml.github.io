@@ -130,7 +130,7 @@
 			if (parteAtual() < partes[partes.length - 1]) {
 				var proximo = (parteAtual() + 1).toString().concat(".html");
 				document.querySelector('#iframe').src = proximo;
-				var audio = new Audio('slide.mp3');
+				var audio = new Audio('../../assets/audio/slide.mp3');
 				audio.addEventListener('canplaythrough', function () {
 					audio.play();
 				});
@@ -143,7 +143,7 @@
 			if (parteAtual() > partes[0]) {
 				var anterior = (parteAtual() - 1).toString().concat(".html");
 				document.querySelector('#iframe').src = anterior;
-				var audio = new Audio('slide.mp3');
+				var audio = new Audio('../../assets/audio/slide.mp3');
 				audio.addEventListener('canplaythrough', function () {
 					audio.play();
 				});
