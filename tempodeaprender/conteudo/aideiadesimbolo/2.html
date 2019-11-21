@@ -10,8 +10,12 @@
     <script src="../../assets/js/jquery-3.4.1.min.js"></script>
     <script>
         function recarrega() {
+            var audio = new Audio('../../assets/audio/transition.wav');
+				audio.addEventListener('canplaythrough', function () {
+					audio.play();
+				});
             $('.atividade').fadeOut(300);
-            $('.container-fluid').show(300);
+            $('.container-fluid').show(450);
         }
 
         function ApareceTexto() {
