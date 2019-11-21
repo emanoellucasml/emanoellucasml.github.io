@@ -9,14 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <script src="../../assets/js/jquery-3.4.1.min.js"></script>
     <script>
-        window.onload = function () {
-            $('body').show(500)
-        };
-
         function recarrega() {
-            alert('👌');
+            $('.atividade').fadeOut(300);
+            $('.container-fluid').show(300);
         }
-
 
         function ApareceTexto() {
             document.querySelector('h2').style.display = 'block';
@@ -29,11 +25,21 @@
             //$('h1').fadeOut(100);
             document.querySelector('.atividade').style.boxShadow = 'none';
         }
+
+        function imprimeConteudo(){
+            window.print();
+        }
     </script>
     <style>
-        body{
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container-fluid{
             display: none;
         }
+
         .atividade {
             -webkit-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
@@ -79,12 +85,233 @@
             cursor: pointer;
             opacity: 100%;
         }
+
+        .retangulo-atv {
+            width: 50rem;
+            height: 15rem;
+            border: 1px solid black;
+            margin: auto;
+            background-color: white;
+        }
+
+        .retangulo-sig-place {
+            width: 80%;
+            display: flex;
+            margin: auto;
+            font-size: 1.5rem;
+        }
+
+        .retangulo-sig-place-int{
+            display: flex;
+            flex: 1;
+            padding: 4.5rem;
+        }
+
+        .be {
+            border-left: 1px solid black;
+        }
+
+        .bd {
+            border-right: 1px solid black;
+        }
+
+        .bs {
+            border-top: 1px solid black;
+        }
+
+        .bi {
+            border-bottom: 1px solid black;
+        }
+
+        #btn-imprimir{
+            font-family: 'sans serif';
+            font-size: 1.3rem;
+        }
+
+        #btn-imprimir:hover{
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
-    <div class="atividade" onmouseover="ApareceTexto()" onmouseout="DesapareceTexto()" onclick="recarrega()">
+    <div class="atividade" onmouseover="ApareceTexto()" onmouseout="DesapareceTexto()"
+        onclick="recarrega()">
         <h2>Atividades</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 mark text-center">
+                <h3>ATIVIDADES PARA O DESENVOLVIMENTO DA 1ª CAPACIDADE - A IDEIA DE SÍMBOLO</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            </div>
+        </div>
+        <p>
+            1. Traga para sala de aula bandeira do seu time de futebol, bandeira de países, do seu estado, município,
+            gestos convencionais, símbolos religiosos, amuletos, emblemas etc. Debata com seu (sua) professor(a) e seus
+            colegas o que representa esses símbolos.
+        </p>
+        <p>
+            2. Demonstre sentimentos através do corpo. Seus colegas deverão observar suas expressões faciais e depois
+            desenhá-las.
+            <center><img src="../../atividade/img/1.1.png"
+                    style="border-left: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;"
+                    alt=""></center>
+        </p>
+        <p>
+            3. Pinte os quadrinhos com as cores que representam o significado de cada palavra, de acordo com o modelo.
+            <center><img src="../../atividade/img/1.2.png" alt="" width="55%" style="border: 1px solid black;"></center>
+        </p>
+        <p>
+            4. Desenhe a bandeira do Brasil, e em seguida discuta com seu (sua) professor(a) o significado de suas
+            cores, comparando com a atividade anterior.
+            <div class="retangulo-atv">
+            </div>
+        </p>
+        <p>
+            5. Desenhe e pinte a bandeira de seu Estado. Depois discuta com seu (sua) professor (a) e seus colegas o
+            significado de suas cores, e compare com a atividade anterior.
+            <div class="retangulo-atv">
+            </div>
+        </p>
+        <p>
+            6. Complete os semáforos com as cores correspondentes, conforme as palavras forem sendo ditadas por seu
+            (sua) professor (a).
+            <center><img src="../../atividade/img/1.6.png" style="border: 1px solid black" alt=""></center>
+        </p>
+        <p>
+            7. Os pensamentos podem ser expressos através dos gestos. Tente se comunicar com seus colegas somente
+            através de gestos.
+        </p>
+        <p>
+            8. Observe os gestos abaixo e diga o que representam. Escreva no seu caderno.
+            <center><img src="../../atividade/img/1.8.png"
+                    style="border-bottom: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;"
+                    alt=""></center>
+        </p>
+        <p>
+            9. Observe as placas de trânsito e discuta com seu (sua) professor (a) suas semelhanças e diferenças.
+            <center><img src="../../atividade/img/1.9.1.png" class="be bd bs" alt=""></center>
+            <center><img src="../../atividade/img/1.9.2.png" class="be bd" alt=""></center>
+            <center><img src="../../atividade/img/1.9.3.png" class="be bd bi" alt=""></center>
+            <p>Como você deve ter notado, a faixa que corta a placa indica proibição.</p>
+        </p>
+        <p>
+            Com a ajuda de seu (sua) professor (a), crie uma lista de regras de convivência a serem utilizadas na sala
+            de aula ou na comunidade em que vive. Depois, ilustre essas regras com figuras de placas proibitivas. </br>
+            <span style="background-color: yellow;">(Inserir a imagem da página 5, atividade 7 do caderno de atividades
+                1)</span>
+        </p>
+        <p>
+            10. Recorte as placas e cole no lugar adequado, à proporção que seu (sua) professor (a) for ditando os
+            nomes.
+            <center><img src="../../atividade/img/10.1.jpg" alt=""></center>
+        </p>
+        <p>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Ciclista
+                </div>
+                <div class="retangulo-sig-place-int be">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Permitido trânsito de pedestre
+                </div>
+                <div class=" retangulo-sig-place-int be">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Lombada
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Velocidade proibida
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Mão dupla
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Proibido retornar
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Proibido virar à esquerda
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Velocidade máxima
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Proibido trânsito de automóvel e biciclete
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Proibido trânsito de carro e boi
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Proibido buzinar
+                </div>
+                <div class="be retangulo-sig-place-int"">
+                </div>
+            </div>
+            <div class="bs bd be retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Distância máxima
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+            <div class="bs bd be bi retangulo-sig-place">
+                <div class="retangulo-sig-place-int">
+                    Pare
+                </div>
+                <div class="be retangulo-sig-place-int">
+                </div>
+            </div>
+        </p>
+        <p>
+            11. Discuta com seu (sua) professor (a) e seus colegas o significado de cada um dos símbolos que seguem.
+            <center><img src="../../atividade/img/1.11.png" class="bs bi be bd" alt=""></center>
+        </p>
+        <div class="row" id="btn-imprimir" onclick="imprimeConteudo()">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 text-center btn-info p-2">
+                Imprimir
+            </div>
+        </div>
     </div>
 </body>
 

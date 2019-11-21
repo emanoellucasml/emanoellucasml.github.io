@@ -134,8 +134,9 @@
 				audio.addEventListener('canplaythrough', function () {
 					audio.play();
 				});
-			} else {
-				window.alert("Você chegou ao fim do documento!");
+			} 
+			if(parteAtual() == partes[partes.length - 1]){
+				document.querySelector('#botao-direito').style.display = 'none';
 			}
 		}
 
@@ -147,6 +148,10 @@
 				audio.addEventListener('canplaythrough', function () {
 					audio.play();
 				});
+				var botao = document.querySelector('#botao-direito').style.display;
+				if(botao.toString() == 'none'){
+					document.querySelector('#botao-direito').style.display = 'block';
+				}
 			}
 		}
 
@@ -162,7 +167,7 @@
 	</script>
 </head>
 
-<body style="background-color: white !important;">
+<body style="background-color: white !important; padding: 0 !important; margin: 0 !important;">
 	<div id="preloader">
 		<div class="inner">
 			<div class="bolas">
