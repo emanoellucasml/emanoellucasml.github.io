@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução</title>
+    <link rel="stylesheet" href="style/introducao.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css" text="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script>
+        function recarrega() {
+            var audio = new Audio('../../assets/audio/transition.wav');
+            audio.addEventListener('canplaythrough', function () {
+                audio.play();
+            });
+            $('.atividade').fadeOut(300);
+            $('.container-fluid').show(450);
+        }
+
+        function ApareceTexto() {
+            document.querySelector('h2').style.display = 'block';
+            //$('h1').fadeIn(300);
+            document.querySelector('.atividade').style.boxShadow = '0px 0px 10px black';
+        }
+
+        function DesapareceTexto() {
+            document.querySelector('h2').style.display = 'none';
+            //$('h1').fadeOut(100);
+            document.querySelector('.atividade').style.boxShadow = 'none';
+        }
+
+        function imprimeConteudo() {
+            window.print();
+        }
+    </script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container-fluid {
+            display: none;
+        }
+
+        .atividade {
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        .atividade:hover {
+            -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-family: 'PT Sans', sans-serif;
+            text-indent: 5%;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: 'PT Sans', sans-serif;
+            display: none;
+
+        }
+
+        .atividade {
+            height: 220px;
+            width: 220px;
+            background-color: green;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -50px;
+            border-radius: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 50%;
+            color: white;
+        }
+
+        .atividade:hover {
+            cursor: pointer;
+            opacity: 100%;
+        }
+
+        .retangulo-atv {
+            width: 50rem;
+            height: 15rem;
+            border: 1px solid black;
+            margin: auto;
+            background-color: white;
+        }
+
+        .retangulo-sig-place {
+            width: 80%;
+            display: flex;
+            margin: auto;
+            font-size: 1.5rem;
+        }
+
+        .retangulo-sig-place-int {
+            display: flex;
+            flex: 1;
+            padding: 4.5rem;
+        }
+
+        .be {
+            border-left: 1px solid black;
+        }
+
+        .bd {
+            border-right: 1px solid black;
+        }
+
+        .bs {
+            border-top: 1px solid black;
+        }
+
+        .bi {
+            border-bottom: 1px solid black;
+        }
+
+        #btn-imprimir {
+            font-family: 'sans serif';
+            font-size: 1.3rem;
+        }
+
+        #btn-imprimir:hover {
+            cursor: pointer;
+        }
+
+        .img-formas {
+            display: block;
+            margin-left: 3rem;
+            width: 60%;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="atividade" onmouseover="ApareceTexto()" onmouseout="DesapareceTexto()" onclick="recarrega()">
+        <h2>Atividades</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 mark text-center">
+                <h3>ATIVIDADES PARA O DESENVOLVIMENTO 2ª CAPACIDADE - DISCRIMINAÇÃO DAS FORMAS DAS LETRAS</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                <p>
+                    1. Peça aos alunos para cobrirem as linhas pontilhadas:</br></br>
+                    <img src="../../atividade/img/cruz.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/retangulo.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/curva.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/estrela.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/lua.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/coração.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/semicirculo.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/sol.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/losango.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/triangulo.png" class="img-formas" alt="">
+                    <img src="../../atividade/img/raio.png" class="img-formas" alt="">
+                </p>
+                <p style="font-weight: bold; text-indent: 0;">
+                    REPITA ESTAS ATIVIDADES QUANTAS VEZES FOREM NECESSÁRIAS
+                    OU ATÉ QUE VOCÊ OBSERVE QUE SEU ALUNO JÁ CONSEGUE
+                    TRAÇAR AS LINHAS COM DESENVOLTURA E PRECISÃO.
+                </p>
+                <p style="font-weight: bold; text-indent: 0%;">
+                    TEMA GERADOR – IDENTIDADE: TRABALHANDO COM OS NOMES
+                    PRÓPRIOS
+                </p>
+                <p>
+                    Os nomes próprios, além de serem palavras com
+                    muito significado, permitem o contato com diferentes
+                    sílabas, diferentes “tamanhos de palavras”, conservação
+                    de sílabas, bem como a aprendizagem do valor sonoro de
+                    algumas consoantes.
+                </p>
+                <p>
+                    Além disso, trabalhar com o tema gerador
+                    “Identidade” a partir dos próprios nomes dos alunos é
+                    muito importante para que eles reflitam sobre sua
+                    história e sobre quem são. A questão do nome se torna
+                    reveladora e deve ser o ponto de partida de todo
+                    processo de aprendizagem de jovens e adultos.
+                </p>
+                <p style="text-indent: 0%;">
+                    LEIA EM VOZ ALTA PARA A TURMA
+                </p>
+                <div style="margin: auto;" class="text-center">
+                    <strong>
+                        NOME DA GENTE</br></br>
+
+                        POR QUE É QUE ME CHAMO ISSO</br>
+                        E NÃO ME CHAMO AQUILO?</br>
+                        POR QUE É QUE O JACARÉ</br>
+                        NÃO SE CHAMA CROCODILO?</br></br>
+
+                        EU NÃO GOSTO</br>
+                        DO MEU NOME,</br>
+                        NÃO FUI EU</br>
+                        QUEM O ESCOLHEU.</br>
+                        EU NÃO SEI</br>
+                        POR QUE SE METEM</br>
+                        COM UM NOME</br>
+                        QUE É SÓ MEU!</br></br>
+
+                        VAI CHAMAR COMO O VOVÔ,</br>
+                        MAS NINGUÉM</br>
+                        VAI PERGUNTAR</br>
+                        O QUE PENSA O COITADINHO.</br></br>
+
+                        FOI MEU PAI QUEM DECIDIU</br>
+                        QUE O NOME FOSSE AQUELE.</br>
+                        ISSO SÓ SERIA JUSTO</br>
+                        SE EU ESCOLHESSE</br>
+                        O NOME DELE.</br></br>
+
+                        QUANDO EU TIVER UM FILHO,</br>
+                        NÃO VOU POR NOME NENHUM.</br>
+                        QUANDO ELE FOR BEM GRANDE,</br>
+                        ELE QUE PROCURE POR UM.</br></br>
+                        <sup style="font-weight: 100;">(BANDEIRA, Pedro. Cavalgando o arco-íris. 16.ed. São Paulo:
+                            Moderna, 1991, p.12).</sup>
+                    </strong>
+                </div>
+                <p style="text-indent: 0%; font-weight: bold;">
+                    COMPREENSÃO DA LEITURA
+                </p>
+                <p>
+                    - O que a história do seu nome tem em comum com a</br>
+                    história do poema?
+                </p>
+                <p style="text-indent: 0%; font-weight: bold;">
+                    FICHÁRIOS (CRACHÁS) DE NOMES
+                </p>
+                <p style="text-indent: 0%;;">
+                    <strong>OBJETIVO:</strong> identificar o aluno; servir para que o aluno
+                    assuma duas posições: a de quem copia e a de quem
+                    observa a maneira que um sujeito alfabetizado escreve.
+                </p>
+                <p style="text-indent: 0%; font-weight: bold;">
+                    PROCEDIMENTOS:
+                </p>
+                <p>
+                    <ul>
+                        <li>Todos os cartões devem ter o mesmo tamanho, forma
+                            e material e serem escritos com o mesmo tipo de
+                            caneta ou hidrográfica, com o mesmo tipo de letra
+                            (maiúscula), para que só varie o que estiver
+                            escrito em cada um deles.
+                        </li>
+                        <li>
+                            Progressivamente, conserve de um lado do cartão o
+                            nome escrito com letra de imprensa maiúscula e do
+                            outro lado escreva com letra cursiva, deixando
+                            claro que estão dizendo exatamente a mesma coisa.
+                        </li>
+                        <li>
+                            Se houver vários alunos com o mesmo nome, você se
+                            senta com esse grupo e todos resolverão a situação
+                            de comum acordo encontrando sempre uma solução
+                            para que não haja nomes repetidos.
+                        </li>
+                        <li>
+                            Você também incorpora um cartão com seu próprio
+                            nome, que será utilizado em muitas situações, por
+                            exemplo, quando os nomes forem comparados – por
+                            que não? – também com o seu.
+                        </li>
+                        <li>
+                            Os crachás poderão ser utilizados pelos alunos
+                            para identificação do trabalho de cada um sem
+                            necessidade que você o escreva. Os alunos copiarão
+                            seus nomes nos trabalhos que realizarem, usando
+                            como modelo a escrita de seu cartão.
+                        </li>
+                    </ul>
+                </p>
+                <p style="text-indent: 0%; font-weight: bold;">
+                    MODELO:
+                    <img src="" alt="">
+                </p>
+                
+            </div>
+        </div>
+        <div class="ro
+        w" id="btn-imprimir" onclick="imprimeConteudo()">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 text-center btn-info p-2">
+                Imprimir
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
