@@ -13,9 +13,9 @@
     </header>
     <section>
         <div>
-            <p>Insira um número entre 1 e 100: <input type="number" name="txtNumero" id="txtNumero"></p>
+            <p>Insira um número entre 1 e 100: <input onkeypress="ApertouTecla(event)" type="number" name="txtNumero" id="txtNumero"></p>
             <p>
-                <input type="button" value="Adicionar" id="btnAdicionar">
+                <input type="button" value="Adicionar" title="Você também pode pressionar ENTER para adicionar um número à lista." id="btnAdicionar">
                 <input type="button" value="Finalizar" id="btnFinalizar">
             </p>
             <hr/>

@@ -64,3 +64,11 @@ function resumo(){
 function limpaResultado(){
     window.document.querySelector('#resultado').innerHTML = ''
 }
+
+
+function ApertouTecla(e){
+    if(e.keyCode == 13){    
+        document.activeElement.blur() //tira o foco da caixa de textos
+        window.document.querySelector('#btnAdicionar').click()
+    }
+}
