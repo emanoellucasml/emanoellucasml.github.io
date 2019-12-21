@@ -31,28 +31,55 @@
             text-align: center;
             line-height: 30px;
             border-radius: 20px;
-            font-family: 'Varela Round', sans-serif;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.164);
             color: white;
             background-color: rgb(63, 77, 35);
         }
 
+        p{
+            font-family: 'Varela Round', sans-serif;
+        }
+
         #btnCarregar:hover{
             cursor: pointer;
+        }
+        #btnLimpar{
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            border: 1px solid gray;
+        }
+        #btnLimpar:hover{
+            cursor:pointer;
         }
     </style>
 </head>
 <body>
     <div id="barraDeCarregamento">
     </div>
+   <p>
+       tempo de carregamento da barra, em segundos:  <input size="3" type="number" name="tempoDeCarregamento"  min="1" id="tempoDeCarregamento" placeholder="Padrão: 1 segundo">
+   </p>
     <div id="btnCarregar">
         carregar
     </div>
+    <div id="btnLimpar">
+        reiniciar()
+    </div>
     <script>
-        window.document.querySelector('#btnCarregar').addEventListener('click', carrega)
-        
+        window.document.querySelector('#btnCarregar').addEventListener('click', function(){
+            let tempo = window.document.querySelector('#tempoDeCarregamento').value
+            tempo = Number.parseInt(tempo)
+            if(tempo < 0){
+                window.alert('Inválido!')
+                return
+            }
+            carrega(tempo*10)
+        })
+
         function carrega(tempo = 20){
-            let timer = setInterval(function(){
+            let k = tempo
+            let timer = setInterval(function(k){
                 let unidade = window.document.createElement('div')
                 unidade.setAttribute('class', 'unidade')
                 window.document.querySelector('#barraDeCarregamento').appendChild(unidade)
@@ -63,22 +90,22 @@
                         audio.play();
                     });
                 }
-            }, tempo)
-        }
-
-        function parar(id){
-            clearInterval(id)
-        }
-
-        function verificaCarregamento(){
-            if(unidades() >= 100){
-                window.alert('ok!')
-            }
+            }, k)
         }
 
         function unidades(){
             return window.document.querySelectorAll('.unidade').length
         }
+
+
+        function limpar(){
+            window.document.querySelector('#barraDeCarregamento').innerHTML = ''
+            window.document.querySelector('#tempoDeCarregamento').value = ''
+        }
+        
+        window.document.querySelector('#btnLimpar').addEventListener('click', function(){
+            limpar()
+        })
     </script>
 </body>
 </html>
