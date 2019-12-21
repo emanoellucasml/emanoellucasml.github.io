@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Barra de carregamento</title>
+    <style>
+        #barraDeCarregamento{
+            border: 1px solid black;
+            width: 500px;
+            height: 20px;
+            overflow: hidden;
+        }
+        .unidade{
+            height: 20px;
+            width: 5px;
+            background-color: green;
+            margin: 0px;
+            float: left
+        }
+        #btnCarregar{
+            margin-top: 200px;
+            width: 100px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 20px;
+            font-family: 'Varela Round', sans-serif;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.164);
+            color: white;
+            background-color: rgb(63, 77, 35);
+        }
+
+        #btnCarregar:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="barraDeCarregamento">
+    </div>
+    <div id="btnCarregar">
+        carregar
+    </div>
+    <script>
+        window.document.querySelector('#btnCarregar').addEventListener('click', carrega)
+        
+        function carrega(tempo = 20){
+            let timer = setInterval(function(){
+                let unidade = window.document.createElement('div')
+                unidade.setAttribute('class', 'unidade')
+                window.document.querySelector('#barraDeCarregamento').appendChild(unidade)
+                if(unidades() >= 100){
+                    clearInterval(timer)
+                    var audio = new Audio('done.wav');
+                    audio.addEventListener('canplaythrough', function() {
+                        audio.play();
+                    });
+                }
+            }, tempo)
+        }
+
+        function parar(id){
+            clearInterval(id)
+        }
+
+        function verificaCarregamento(){
+            if(unidades() >= 100){
+                window.alert('ok!')
+            }
+        }
+
+        function unidades(){
+            return window.document.querySelectorAll('.unidade').length
+        }
+    </script>
+</body>
+</html>
