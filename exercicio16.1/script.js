@@ -3,7 +3,6 @@ var numeros = JSON.parse(localStorage.getItem('numeros')) || []
 window.onload = function(){
     if(numeros.length > 0){
         this.atualizaExibicao()
-        this.escutaX()
     }
 }
 
@@ -42,6 +41,7 @@ function atualizaExibicao(){
         divComNumero.appendChild(divX)
         wrapperNumero.appendChild(divComNumero)
     }
+    escutaX()
 }
 
 function limpaCaixaDeTexto(){
