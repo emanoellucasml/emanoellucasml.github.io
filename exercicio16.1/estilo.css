@@ -57,6 +57,18 @@ footer{
     margin-bottom: 5px;
 }
 
+.x{
+    font-size: 0.7rem;
+    color: white;
+    display: flex;
+    align-self: flex-start;
+}
+
+.x:hover{
+    cursor: pointer;
+    color: red;
+}
+
 p{
     margin: 0px;
 }
