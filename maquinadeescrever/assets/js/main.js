@@ -1,3 +1,5 @@
+let audioTecla = new Audio('assets/audio/tecla.wav')
+
 const elementos = [
     {tag: 'p', texto: 'Frase 1'},
     {tag: 'div', texto: 'Frase 2'},
@@ -23,14 +25,13 @@ function efeitoEscrita(elemento) {
     elemento.innerHTML = '';
     for(let i = 0; i < textoArray.length; i++) {
         setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
-        setTimeout(() => reproduzSomTecla(), 75 * i);
+        setTimeout(() => audioTecla.play(), 75 * i);
     }
 }
 
-function reproduzSomTecla(){
-    var audio = new Audio('assets/audio/tecla.wav');
-    audio.addEventListener('canplaythrough', function() {
-        audio.play();
+
+function reproduz(){
+    audioTecla.addEventListener('canplaythrough', function() {
+        audioTecla.play();
     });
 }
-
