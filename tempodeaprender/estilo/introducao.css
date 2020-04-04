@@ -25,6 +25,7 @@ body{
 
 .barrasuperiorinterna .campo_pesquisa{
 	margin-left: -10px;
+	border-radius: 1px;
 }
 
 .barrasuperiorinterna .btn{

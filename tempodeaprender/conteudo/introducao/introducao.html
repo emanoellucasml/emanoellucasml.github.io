@@ -17,6 +17,11 @@
 		function oculta() {
 			$('#preloader').fadeOut(1000);
 		}
+		function aumentaFonte(){
+			let iframe = document.querySelector('#iframe').contentWindow;
+			alert(iframe)
+
+		}
 	</script>
 	<style>
 		* {
@@ -25,30 +30,7 @@
 		}
 	</style>
 	<style>
-		#botao-esquerdo {
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			padding-left: 1rem;
-			padding-right: 1rem;
-			background-color: #559041;
-			border-radius: 1rem;
-			color: white;
-			z-index: 999;
 
-		}
-
-		#botao-direito {
-			position: fixed;
-			bottom: 0;
-			right: 0;
-			padding-left: 1rem;
-			padding-right: 1rem;
-			background-color: #559041;
-			color: white;
-			border-radius: 1rem;
-			z-index: 999;
-		}
 
 		#botao-direito:hover {
 			cursor: pointer;
@@ -93,6 +75,7 @@
 
 		}
 
+
 		.bolas>div:nth-child(1) {
 			animation-duration: 0.99s;
 			animation-delay: 0.2;
@@ -126,6 +109,58 @@
 				transform: scale(1);
 				opacity: 1;
 			}
+		}
+
+		.botoes-acessibilidade{
+			/* position: fixed;
+			left: 50%; */
+			width: 5rem;
+		}
+		.barra-inferior{
+			position: fixed;
+			width: 100%;
+			background-color: white;
+			bottom: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#botao-esquerdo {
+			/* position: fixed;
+			bottom: 0;
+			left: 0; */
+			padding-left: 1rem;
+			padding-right: 1rem;
+			background-color: #559041;
+			border-radius: 1rem;
+			color: white;
+			display: flex;
+			align-items: center;
+			/* z-index: 999; */
+
+		}
+
+		#botao-direito {
+			/* position: fixed;
+			bottom: 0;
+			right: 0; */
+			padding-left: 1rem;
+			padding-right: 1rem;
+			background-color: #559041;
+			color: white;
+			display: flex;
+			align-items: center;
+			border-radius: 1rem;
+			/* z-index: 999; */
+		}
+
+
+		.fa-plus-square:hover{
+			cursor: pointer;
+		}
+
+		.fa-minus-square:hover{
+			cursor: pointer;
 		}
 	</style>
 	<script>
@@ -181,10 +216,18 @@
 		</div>
 	</div>
 	<iframe id="iframe" src="0.html" width="100%" height="670px" frameborder="0"></iframe>
-	<div id="botao-esquerdo" onclick="anterior()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-	</div>
-	<div id="botao-direito" onclick="proximo()"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-	</div>
+	
+	<div class="barra-inferior">
+		<div id="botao-esquerdo" onclick="anterior()">
+			<i class="fa fa fa-arrow-circle-left" aria-hidden="true"></i>
+		</div>
+		<div class="botoes-acessibilidade">
+			<i class="fa fa-2x fa-plus-square" onclick="aumentaFonte()" aria-hidden="true"></i>
+			<i class="fa fa-2x fa-minus-square" onclick="diminuiFonte()" aria-hidden="true"></i>
+		</div>	
+		<div id="botao-direito" onclick="proximo()">
+			<i class="fa fa fa-arrow-circle-right" aria-hidden="true"></i>
+		</div>
 	</div>
 	
 	  <button type="button" id="aciona" style="display: none;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+	.barra-atualizacao{
+	width: 100%;
+	max-width: 1300px;
+	margin: auto;
+	text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+    padding: 0.4rem;
+}
