@@ -31,13 +31,19 @@
 	</style>
 	<style>
 
-
 		#botao-direito:hover {
 			cursor: pointer;
 		}
 
 		#botao-esquerdo:hover {
 			cursor: pointer;
+		}
+
+		#botao-direito{
+			background-image: url(../img/seta-direita.png);
+		}
+		#botao-esquerdo{
+			background-image: url(../img/seta-esquerda.png);
 		}
 
 		#preloader {
@@ -111,11 +117,7 @@
 			}
 		}
 
-		.botoes-acessibilidade{
-			/* position: fixed;
-			left: 50%; */
-			width: 5rem;
-		}
+	
 		.barra-inferior{
 			position: fixed;
 			width: 100%;
@@ -129,28 +131,31 @@
 			/* position: fixed;
 			bottom: 0;
 			left: 0; */
-			padding-left: 1rem;
-			padding-right: 1rem;
-			background-color: #559041;
+			/* padding-left: 1rem;
+			padding-right: 1rem; */
+			/* background-color: #559041;
 			border-radius: 1rem;
 			color: white;
 			display: flex;
-			align-items: center;
+			align-items: center; */
 			/* z-index: 999; */
-
+			width: 3rem;
+			height: 2.5rem;
 		}
 
 		#botao-direito {
 			/* position: fixed;
 			bottom: 0;
 			right: 0; */
-			padding-left: 1rem;
-			padding-right: 1rem;
-			background-color: #559041;
+			/* padding-left: 1rem;
+			padding-right: 1rem; */
+			width: 3rem;
+			height: 2.5rem;
+			/* background-color: #559041;
 			color: white;
 			display: flex;
-			align-items: center;
-			border-radius: 1rem;
+			align-items: center; */
+			
 			/* z-index: 999; */
 		}
 
@@ -219,14 +224,12 @@
 	
 	<div class="barra-inferior">
 		<div id="botao-esquerdo" onclick="anterior()">
-			<i class="fa fa fa-arrow-circle-left" aria-hidden="true"></i>
+			<!-- <i class="fa fa fa-arrow-circle-left" aria-hidden="true"></i> -->
+			
 		</div>
-		<div class="botoes-acessibilidade">
-			<i class="fa fa-2x fa-plus-square" onclick="aumentaFonte()" aria-hidden="true"></i>
-			<i class="fa fa-2x fa-minus-square" onclick="diminuiFonte()" aria-hidden="true"></i>
-		</div>	
 		<div id="botao-direito" onclick="proximo()">
-			<i class="fa fa fa-arrow-circle-right" aria-hidden="true"></i>
+			<!-- <i class="fa fa fa-arrow-circle-right" aria-hidden="true"></i> -->
+			
 		</div>
 	</div>
 	
