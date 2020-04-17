@@ -4,348 +4,229 @@
 <head>
     <meta charset="UTF-8">
     <title>Introdução</title>
-    <link rel="stylesheet" href="style/introducao.css" type="text/css">
     <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css" text="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <script src="../../assets/js/jquery-3.4.1.min.js"></script>
     <script>
-        function recarrega() {
-            var audio = new Audio('../../assets/audio/transition.wav');
-            audio.addEventListener('canplaythrough', function () {
-                audio.play();
-            });
-            $('.atividade').fadeOut(300);
-            $('.container-fluid').show(450);
-        }
-
-        function ApareceTexto() {
-            document.querySelector('h2').style.display = 'block';
-            //$('h1').fadeIn(300);
-            document.querySelector('.atividade').style.boxShadow = '0px 0px 10px black';
-        }
-
-        function DesapareceTexto() {
-            document.querySelector('h2').style.display = 'none';
-            //$('h1').fadeOut(100);
-            document.querySelector('.atividade').style.boxShadow = 'none';
-        }
-
-        function imprimeConteudo() {
-            window.print();
-        }
+        window.onload = function () {
+            $('body').show(200)
+        };
     </script>
     <style>
         body {
-            padding: 0;
-            margin: 0;
-        }
-
-        .container-fluid {
             display: none;
-        }
-
-        .atividade {
-            -webkit-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
-        }
-
-        .atividade:hover {
-            -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-
         }
 
         p {
             font-size: 1.5rem;
             font-family: 'PT Sans', sans-serif;
             text-indent: 5%;
+            text-align: justify;
+        }
+
+        h1 {
+            font-family: 'PT Sans', sans-serif;
         }
 
         h2 {
             text-transform: uppercase;
-            font-family: 'PT Sans', sans-serif;
-            display: none;
-
         }
 
-        .atividade {
-            height: 220px;
-            width: 220px;
-            background-color: green;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -100px;
-            margin-top: -50px;
-            border-radius: 110px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 50%;
-            color: white;
-        }
-
-        .atividade:hover {
-            cursor: pointer;
-            opacity: 100%;
-        }
-
-        .retangulo-atv {
-            width: 50rem;
-            height: 15rem;
-            border: 1px solid black;
-            margin: auto;
-            background-color: white;
-        }
-
-        .retangulo-sig-place {
-            width: 80%;
-            display: flex;
-            margin: auto;
+        td{
+            text-align: center;
             font-size: 1.5rem;
-        }
-
-        .retangulo-sig-place-int {
-            display: flex;
-            flex: 1;
-            padding: 4.5rem;
-        }
-
-        .be {
-            border-left: 1px solid black;
-        }
-
-        .bd {
-            border-right: 1px solid black;
-        }
-
-        .bs {
-            border-top: 1px solid black;
-        }
-
-        .bi {
-            border-bottom: 1px solid black;
-        }
-
-        #btn-imprimir {
-            font-family: 'sans serif';
-            font-size: 1.3rem;
-        }
-
-        #btn-imprimir:hover {
-            cursor: pointer;
-        }
-
-        .img-formas {
-            display: block;
-            margin-left: 3rem;
-            width: 60%;
-            margin-bottom: 2rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="atividade" onmouseover="ApareceTexto()" onmouseout="DesapareceTexto()" onclick="recarrega()">
-        <h2>Atividades</h2>
-    </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 mark text-center">
-                <h3>ATIVIDADES PARA O DESENVOLVIMENTO 2ª CAPACIDADE - DISCRIMINAÇÃO DAS FORMAS DAS LETRAS</h3>
+        <div class="row mark">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+                <h2>Unidade II</h2>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 text-center">
+                <h3>As relações complicadas entre sons e letra  </h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
                 <p>
-                    1. Peça aos alunos para cobrirem as linhas pontilhadas:</br></br>
-                    <img src="../../atividade/img/cruz.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/retangulo.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/curva.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/estrela.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/lua.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/coração.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/semicirculo.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/sol.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/losango.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/triangulo.png" class="img-formas" alt="">
-                    <img src="../../atividade/img/raio.png" class="img-formas" alt="">
+                    Para Lemle (2007), o modelo ideal do sistema
+                    alfabético é o de que cada letra corresponda a um som e
+                    cada som a uma letra, mas esta relação só se realiza em
+                    pouquíssimos casos. As coisas que acontecem entre sons
+                    e letras são bem mais complicadas do que essa perfeição
+                    de casamento monogâmico entre letra e som.
                 </p>
-                <p style="font-weight: bold; text-indent: 0;">
-                    REPITA ESTAS ATIVIDADES QUANTAS VEZES FOREM NECESSÁRIAS
-                    OU ATÉ QUE VOCÊ OBSERVE QUE SEU ALUNO JÁ CONSEGUE
-                    TRAÇAR AS LINHAS COM DESENVOLTURA E PRECISÃO.
-                </p>
-                <p style="font-weight: bold; text-indent: 0%;">
-                    TEMA GERADOR – IDENTIDADE: TRABALHANDO COM OS NOMES
-                    PRÓPRIOS
-                </p>
+                <h3>
+                    Primeiro tipo de relação
+                </h3>
                 <p>
-                    Os nomes próprios, além de serem palavras com
-                    muito significado, permitem o contato com diferentes
-                    sílabas, diferentes “tamanhos de palavras”, conservação
-                    de sílabas, bem como a aprendizagem do valor sonoro de
-                    algumas consoantes.
+                    O ideal, num sistema de escrita desta natureza, é
+                    que cada letra represente um som e cada som uma letra.
                 </p>
-                <p>
-                    Além disso, trabalhar com o tema gerador
-                    “Identidade” a partir dos próprios nomes dos alunos é
-                    muito importante para que eles reflitam sobre sua
-                    história e sobre quem são. A questão do nome se torna
-                    reveladora e deve ser o ponto de partida de todo
-                    processo de aprendizagem de jovens e adultos.
-                </p>
-                <p style="text-indent: 0%;">
-                    LEIA EM VOZ ALTA PARA A TURMA
-                </p>
-                <div style="margin: auto;" class="text-center">
-                    <strong>
-                        NOME DA GENTE</br></br>
-
-                        POR QUE É QUE ME CHAMO ISSO</br>
-                        E NÃO ME CHAMO AQUILO?</br>
-                        POR QUE É QUE O JACARÉ</br>
-                        NÃO SE CHAMA CROCODILO?</br></br>
-
-                        EU NÃO GOSTO</br>
-                        DO MEU NOME,</br>
-                        NÃO FUI EU</br>
-                        QUEM O ESCOLHEU.</br>
-                        EU NÃO SEI</br>
-                        POR QUE SE METEM</br>
-                        COM UM NOME</br>
-                        QUE É SÓ MEU!</br></br>
-
-                        VAI CHAMAR COMO O VOVÔ,</br>
-                        MAS NINGUÉM</br>
-                        VAI PERGUNTAR</br>
-                        O QUE PENSA O COITADINHO.</br></br>
-
-                        FOI MEU PAI QUEM DECIDIU</br>
-                        QUE O NOME FOSSE AQUELE.</br>
-                        ISSO SÓ SERIA JUSTO</br>
-                        SE EU ESCOLHESSE</br>
-                        O NOME DELE.</br></br>
-
-                        QUANDO EU TIVER UM FILHO,</br>
-                        NÃO VOU POR NOME NENHUM.</br>
-                        QUANDO ELE FOR BEM GRANDE,</br>
-                        ELE QUE PROCURE POR UM.</br></br>
-                        <sup style="font-weight: 100;">(BANDEIRA, Pedro. Cavalgando o arco-íris. 16.ed. São Paulo:
-                            Moderna, 1991, p.12).</sup>
-                    </strong>
-                </div>
-                <p style="text-indent: 0%; font-weight: bold;">
-                    COMPREENSÃO DA LEITURA
-                </p>
-                <p>
-                    - O que a história do seu nome tem em comum com a</br>
-                    história do poema?
-                </p>
-                <p style="text-indent: 0%; font-weight: bold;">
-                    FICHÁRIOS (CRACHÁS) DE NOMES
-                </p>
-                <p style="text-indent: 0%;;">
-                    <strong>OBJETIVO:</strong> identificar o aluno; servir para que o aluno
-                    assuma duas posições: a de quem copia e a de quem
-                    observa a maneira que um sujeito alfabetizado escreve.
-                </p>
-                <p style="text-indent: 0%; font-weight: bold;">
-                    PROCEDIMENTOS:
-                </p>
-                <p>
-                    <ul>
-                        <li>Todos os cartões devem ter o mesmo tamanho, forma
-                            e material e serem escritos com o mesmo tipo de
-                            caneta ou hidrográfica, com o mesmo tipo de letra
-                            (maiúscula), para que só varie o que estiver
-                            escrito em cada um deles.
-                        </li>
-                        <li>
-                            Progressivamente, conserve de um lado do cartão o
-                            nome escrito com letra de imprensa maiúscula e do
-                            outro lado escreva com letra cursiva, deixando
-                            claro que estão dizendo exatamente a mesma coisa.
-                        </li>
-                        <li>
-                            Se houver vários alunos com o mesmo nome, você se
-                            senta com esse grupo e todos resolverão a situação
-                            de comum acordo encontrando sempre uma solução
-                            para que não haja nomes repetidos.
-                        </li>
-                        <li>
-                            Você também incorpora um cartão com seu próprio
-                            nome, que será utilizado em muitas situações, por
-                            exemplo, quando os nomes forem comparados – por
-                            que não? – também com o seu.
-                        </li>
-                        <li>
-                            Os crachás poderão ser utilizados pelos alunos
-                            para identificação do trabalho de cada um sem
-                            necessidade que você o escreva. Os alunos copiarão
-                            seus nomes nos trabalhos que realizarem, usando
-                            como modelo a escrita de seu cartão.
-                        </li>
-                    </ul>
-                </p>
-                <p style="text-indent: 0%; font-weight: bold;">
-                    MODELO:</br>
-                    <img src="../../atividade/img/deusenir.png" alt="">
-                </p>
-                <p style="text-indent: 0%; font-weight: bold;">
-                    DINÂMICA DO NOME DESENHADO</br>
-                    OBJETIVO:<span style="font-weight: 100;"> estabelecer a interação entre você e os alunos de modo positivo; conhecer o nome de cada um, possibilitando a individualização dentro do coletivo.</span>
-                    MATERIAIS: <span style="font-weight: 100;">papel e lápis de cor</span></br>
-                    PROCEDIMENTOS
-                </p>
-                <p>
-                    <ul>
-                        <li>Grupo em círculo, sentado.</li>
-                        <li>Materiais no meio da sala para uso comum. O papel A4 deve estar cortado ao meio, no sentido vertical.</li>
-                        <li>Peça que cada aluno construa seu nome (ou como gostaria de ser chamado) na tira de papel, de forma criativa e original, de modo que o nome se torne personalizado. </li>
-                        <li>Quando todos terminarem, cada um deve apresentar o seu nome, contar a história dele (quem escolheu, por quê... etc.) e falar como se sente em relação a ele (se gosta, se sente que esse nome lhe pertence, se tem apelidos, se gosta do apelido, se não gosta, como gostaria de ser chamado).</li>
-                    </ul>
-                </p>
-                <p><strong>Socializa&ccedil;&atilde;o</strong> &ndash; compartilhe os pontos que lhe chamaram mais aten&ccedil;&atilde;o. Esta &eacute; uma oportunidade para voc&ecirc; trabalhar os apelidos desagrad&aacute;veis, enfatizando o respeito aos demais, &agrave;s suas prefer&ecirc;ncias, ao modo como quer ser chamado, &agrave; imagem que deseja apresentar etc. Estimule os alunos chamarem seus colegas pelo nome que eles preferirem.  Imprima e cole o alfabeto na parede. (Cada aluno deverá ter uma cópia).</p>
-                <p>
-                    <center><img src="../../atividade/img/alfabeto.png" alt="" width="40%"></center>
-                </p>
-                <p><u><strong>LETRAS M&Oacute;VEIS</strong></u></p>
-
-                <p>As letras de imprensa impressas mai&uacute;sculas devem ser coladas em E.V.A ou em cartolina e distribu&iacute;das aos alunos. Com elas, os alunos poder&atilde;o montar e desmontar palavras, que lhes possibilitar&aacute; uma experi&ecirc;ncia de uma s&eacute;rie de decis&otilde;es relativas &agrave;s propriedades da aprendizagem inicial da escrita.</p>
-                <p>Durante as atividades de &ldquo;desmontar&rdquo; e &ldquo;remontar&rdquo; palavras, os alunos poder&atilde;o observar a <strong>identidade das letras usadas</strong>, a <strong>ordem das mesmas</strong>, as <strong>combina&ccedil;&otilde;es de letras</strong> que s&atilde;o permitidas em nossa l&iacute;ngua, a <strong>ocorr&ecirc;ncia ou n&atilde;o de repeti&ccedil;&otilde;es de letras no interior de cada palavra</strong> etc.</p>
-                <p>Ser&atilde;o momentos preciosos e fundamentais para a continuidade da aprendizagem do sistema de escrita alfab&eacute;tica, em que voc&ecirc; poder&aacute; levantar o debate acerca de todos esses aspectos, indagando os alunos (individualmente ou em grupo) sobre semelhan&ccedil;as e diferen&ccedil;as sonoras que surgem nas palavras.</p>
-                <p><strong>MODELO</strong></p>
-                <p>
-                    <div style="width: 60%; border: 4px dashed orange; margin: auto; font-size: 3rem; padding-top: 0.5rem; padding-bottom: 0.5rem;">
-                        R
+                <!-- Módulo citação -->
+                <div style="display: flex;">
+                    <div style="display: flex; flex: 1;">
+                        &nbsp;
                     </div>
-                </p> 
-                <p><strong>ATIVIDADES QUE PROMOVEM ESPECIFICAMENTE A LEITURA UTILIZANDO NOMES PR&Oacute;PRIOS</strong></p>
-
-                <p> 
-                    <ul style="list-style-type: none;">
-                        <li>
-                        <p>A) Comece dizendo aos alunos: &ldquo;Hoje os ajudantes ser&atilde;o...&rdquo; (levante os dois cart&otilde;es com o nome dos alunos escolhidos), mas n&atilde;o os verbalize. Pode acontecer que os alunos cujos nomes est&atilde;o nos cart&otilde;es ainda n&atilde;o consigam l&ecirc;-los e que os outros alunos que j&aacute; leem os ajudem. Em cada ocasi&atilde;o que voc&ecirc; utilizar o conjunto de cart&otilde;es com os nomes, alguns alunos se encarregar&atilde;o de distribu&iacute;-los aos demais.</p>
-                        </li>
-                        <li>
-                        <p>B) Em outro momento voc&ecirc; espalhar&aacute; os cart&otilde;es na sala de aula, pelo ch&atilde;o, nas carteiras, nas mesas... e pedir&aacute; aos alunos que ao entrarem, cada um dever&aacute; pegar o seu.</p>
-                        </li>
-                        <li>
-                        <p>C) Em outra situa&ccedil;&atilde;o, fa&ccedil;a adivinha&ccedil;&otilde;es: &ldquo;Tenho um cart&atilde;o que tem quatro letras e come&ccedil;a com a letra de Fernando&rdquo;. Qual &eacute;? (Esta atividade servir&aacute; para voc&ecirc; analisar com a classe em que aspectos os nomes se parecem e se diferenciam tanto do ponto de vista qualitativo quanto quantitativo).</p>
-                        </li>
-                    </ul>
+                    <div style="display: flex; flex: 2; border: 1px solid #ddd; padding: 0.3rem;">
+                        Chama-se de correspondência biunívoca aquela em que
+                        um elemento de um conjunto corresponde a apenas um
+                        elemento de outro conjunto, ou seja, é de um para
+                        um a correspondência entre os elementos, em ambas
+                        as direções (LEMLE, 2007, p. 17).
+                    </div>
+                </div>
+                <p>
+                    Embora sejam poucos os casos em que estas
+                    regularidades simples se aplicam, são as que mais
+                    predominam no português.
                 </p>
-            </div>
-        </div>
-        <div class="ro
-        w" id="btn-imprimir" onclick="imprimeConteudo()">
-            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 text-center btn-info p-2">
-                Imprimir
+                <p>
+                    <table border="1px" width="100%">
+                        <tr>
+                            <td colspan="3">Quadro 1 - <strong>Uma letra representando um só som</strong></td>
+                        </tr>
+                        <tr>
+                            <td><em>Letra</em></td>
+                            <td><em>Fone(som)</em></td>
+                            <td><em>Exemplos</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>p</strong></td>
+                            <td><strong>[p]</strong></td>
+                            <td>pato, mapa, prato, apto</td>
+                        </tr>
+                        <tr>
+                            <td><strong>b</strong></td>
+                            <td><strong>[b]</strong></td>
+                            <td>bala, cabana, cabra, obter</td>
+                        </tr>
+                        <tr>
+                            <td><strong>f</strong></td>
+                            <td><strong>[f]</strong></td>
+                            <td>faca, café, frade, afta</td>
+                        </tr>
+                        <tr>
+                            <td><strong>v</strong></td>
+                            <td><strong>[v]</strong></td>
+                            <td>vaca, cavalo, nevralgia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>nh</strong></td>
+                            <td><strong>ñ</strong></td>
+                            <td>nhoque, banho</td>
+                        </tr>
+                        <tr>
+                            <td><strong>t</strong></td>
+                            <td><strong>[t]</strong></td>
+                            <td>tabela, pata, trago</td>
+                        </tr>
+                        <tr>
+                            <td><strong>d</strong></td>
+                            <td><strong>[d]</strong></td>
+                            <td>dar, lado, droga, advogado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>lh</strong></td>
+                            <td><strong>[̮ḹ]</strong></td>
+                            <td>palha, lhama</td>
+                        </tr>
+                    </table>
+                    Fonte: adaptado pela autora (FARACO, 2001, p.17)
+                </p>
+                <p>
+                    Mas para nós, o que nos interessa é o <em>alfabeto
+                        latino</em> utilizado em parte por muitas comunidades
+                        linguísticas, porque as línguas são diferentes e
+                        consequentemente o número de letras também.
+                </p>
+                <p>
+                    A escrita do português é de base alfabética, o
+                    que significa que usamos letras que formam <em>grafemas</em>
+                    (letras ou grupos de letras que correspondem a um
+                    <em></em>) que servem para distinguir o significado entre
+                    as palavras na escrita.
+                </p>
+                
+            
+                <p>
+                    Nosso alfabeto é composto de dezessete consoantes
+                    (b, c, d, f, g, h, j, l, m, n, p, q, r, s, t, x, z),
+                    mais k, w, y que fazem parte do novo código
+                    ortográfico; cinco vogais (a, e, i, o, u), que
+                    representam doze unidades sonoras (sete orais: [i],
+                    [e], [E], [a], [ɔ], [o], [u]; cinco nasais: [ĩ], [ẽ],
+                    [ã], [õ], [ũ]) para escrever todas as palavras da nossa
+                    língua e para grafar nomes próprios estrangeiros,
+                    siglas e abreviaturas.
+                </p>
+                <p>
+                    O sistema gráfico precisa fazer também
+                </p>
+                <!-- Módulo citação -->
+                <div style="display: flex;">
+                    <div style="display: flex; flex: 1;">
+                        &nbsp;
+                    </div>
+                    <div style="display: flex; flex: 2; border: 1px solid #ddd; padding: 0.3rem;">
+                        alguns arranjos (por exemplo: combinar letras
+                        vogais com a letra n ou m para fazer a
+                        representação das unidades sonoras nasais, como
+                        manto, mundo, ponto, ou ainda permitir que a mesma
+                        letra represente mais de uma unidade sonora (por
+                        exemplo: a letra e pode representar as unidades [e]
+                        ou [E]: preço/presto (FARACO, 2001, p.33).
+                    </div>
+                </div>
+                <br/>
+                <p>
+                    Para representar os fonemas da nossa língua
+                    precisamos também usar o cê cedilha – Ç – que
+                    representa, na escrita de determinadas palavras, o
+                    fonema /s/, antes das letras A, O, U. Usamos também o til - ~ - sobre as vogais para indicar os fonemas
+                    vocálicos nasais.
+                </p>
+                <p>
+                    O fato de uma escrita ser alfabética e utilizar-
+                    se de grafemas que representam os fonemas da língua,
+                    não significa que, cada vez que ocorre um determinado
+                    fonema em qualquer palavra, ele será representado na
+                    escrita pela mesma letra, pois o uso das letras na
+                    escrita <em>alfabética</em> é regulamentado por um sistema
+                    <em>ortográfico</em>.
+                </p>
+                <p>
+                    É natural, assim, que haja uma 
+                    <em>convenção ortográfica</em>, porque a nossa
+                    escrita vem se constituindo
+                    há muitos séculos e os critérios que determinam a
+                    escolha das letras são diversos, podendo estar baseados
+                    não só na <em>fonologia</em>, mas também na <em>morfologia</em> e na
+                    <em>etimologia</em> (na história e origem das palavras), ou
+                    seja, se vêm do latim, do grego, se foram emprestadas
+                    de outras línguas europeias, de alguma língua indígena
+                    ou africana).
+                </p>
+                <p>
+                    A ortografia reflete uma tentativa de unificarmos
+                    a forma como escrevemos a fim de nos comunicarmos mais
+                    facilmente. A ortografia também reflete aspectos
+                    importantes da própria evolução de uma língua, no
+                    tocante à formação do seu léxico.
+                </p>
+                <p>
+                    Porém, é bom ressaltarmos que existe uma
+                    diferença entre o aprendizado do sistema de notação
+                    <em>alfabética</em> e o aprendizado da <em>norma ortográfica</em> (ver
+                    CONVENÇÃO ORTOGRÁFICA). No início, o alfabetizando
+                    elabora gradualmente sobre como funciona nossa escrita alfabética e domina as convenções letra-som tal como
+                    estão restringidas pelo sistema alfabético, ou seja, os
+                    valores sonoros que cada letra ou dígrafo pode ter
+                    (MORAIS, 1999).
+                </p>
             </div>
         </div>
     </div>
